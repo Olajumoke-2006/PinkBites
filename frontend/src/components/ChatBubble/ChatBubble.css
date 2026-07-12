@@ -1,0 +1,40 @@
+.bubble-row {
+  display: flex;
+  margin: 15px 0;
+}
+
+.bubble-row.bot {
+  justify-content: flex-start;
+}
+
+.bubble-row.user {
+  justify-content: flex-end;
+}
+
+.bubble {
+  max-width: 70%;
+  padding: 15px;
+  border-radius: 18px;
+  animation: pop .3s ease;
+}
+
+.bot {
+  background: #f1f1f1;
+}
+
+.user {
+  background: #ff4d94;
+  color: white;
+}
+
+@keyframes pop {
+  from {
+    transform: scale(.8);
+    opacity: 0;
+  }
+
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}

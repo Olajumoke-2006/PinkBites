@@ -1,0 +1,25 @@
+.header {
+  background: linear-gradient(90deg, #ff4d94, #8b5cf6);
+  color: white;
+  padding: 18px 30px;
+  box-shadow: 0 5px 15px rgba(0,0,0,.15);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.logo svg {
+  font-size: 30px;
+}
+
+.logo h2 {
+  font-size: 24px;
+}
+
+.logo p {
+  font-size: 14px;
+  opacity: .9;
+}
