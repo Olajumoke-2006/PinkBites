@@ -39,7 +39,10 @@ app.use(express.json());
 
 app.use(
   cors({
-    origin: "http://localhost:5173",
+    origin: [
+      "http://localhost:5173",
+      "https://pink-bites.vercel.app/"
+    ],
     credentials: true,
   })
 );
@@ -57,7 +60,9 @@ app.use(
     resave: false,
     saveUninitialized: true,
     cookie: {
-      maxAge: 1000 * 60 * 60 * 24, // 24 hours
+      maxAge: 1000 * 60 * 60 * 24, 
+      secure: true,
+      sameSite: "none",
     },
   })
 );
