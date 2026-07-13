@@ -63,7 +63,7 @@ return;
 const response =
 await axios.get(
 
-`http://localhost:5000/api/payment/verify/${reference}`
+`${import.meta.env.VITE_API_URL}/api/payment/verify/${reference}`
 
 );
 
